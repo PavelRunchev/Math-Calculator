@@ -1,0 +1,150 @@
+@import '../Tools/_tools.animations';
+
+.footer-container {
+    background-color: $background-primary-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icons-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+    
+        .icon {
+            cursor: pointer;
+            font-size: 30px;
+            margin: 0 3%;
+            color: $third-color-blue;
+            transition: all 0.3s ease-out;
+    
+            &:hover {
+                color: $primary-color-blue;
+            }
+        }
+    }
+
+    .footer-main-container {
+        width: 100%;
+
+        .company-container {
+            width: 250px;
+
+            @include for-phone-only {
+                width: 100%;
+            }
+        }
+
+        .footer-container-services {
+            width: 150px;
+
+            @include for-phone-only {
+                width: 100%;
+            }
+        }
+
+        .feedback-container {
+            width: 350px;
+
+            @include for-phone-only {
+                width: 100%;
+            }
+        }
+
+        .global-icon {
+            font-size: 20px !important;
+            color: $third-color-blue;
+        }
+
+        .center-container {
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-container-navlink {
+            position: relative;
+
+            .footer-link {
+                color: $third-color-blue;
+                transition: all 0.3s ease-out;
+            }
+
+            .icon-footer-link {
+                position: absolute;
+                left: -20px;
+                top: 4px;
+                color: $third-color-blue;
+                transition: all 0.3s ease-out;
+                opacity: 0;
+            }
+
+            .footer-link-chart-area:hover ~ .chart-area {
+                opacity: 1;
+            }
+
+            .footer-link-shield-alt:hover ~ .shield-alt {
+                opacity: 1;
+            }
+
+            .footer-link-cookie-bite:hover ~ .cookie-bite {
+                opacity: 1;
+            }
+
+            .footer-link-clipboard-check:hover ~ .clipboard-check {
+                opacity: 1;
+            }
+        }
+
+        .btn-subscribe {
+            margin: 0;
+            background-color: $third-color-blue !important;
+            transition: all 0.3s ease-out;
+    
+            &:hover {
+                background-color: $fourth-color-blue !important;
+            }
+        }
+
+        .subscribe-input {
+            color: $fourth-color-blue !important;
+    
+            &:focus {
+                @include input-select-focus;
+            }
+            
+            &::placeholder {
+                color: $third-color-blue;
+            }
+        }
+    }
+
+
+
+    .license-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .icon-react {
+            font-size: 40px;
+            margin: 10px 0px;
+            animation: rotate-infinity 8s linear infinite;
+        }
+
+       
+    }
+    
+    .footer-license-owner,
+    .footer-company-owner {
+        color: $third-color-blue;
+    }
+}
+

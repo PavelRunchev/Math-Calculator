@@ -17,14 +17,14 @@ import {
     MDBCardImage
   } from 'mdb-react-ui-kit';
 
-import './navigation.scss';
+
 import logo from '../../public/logo.png';
 
 export default function Navigation() {
     const [showBasic, setShowBasic] = useState(false);
 
         return (
-            <MDBNavbar expand='lg' light bgColor='light' className='py-3'>
+            <MDBNavbar expand='lg' light bgColor='light' className='py-3 navbar-container'>
                 <MDBContainer fluid>
                     <MDBCardImage className='nav-logo' src={logo} fluid alt='logo' />
                     

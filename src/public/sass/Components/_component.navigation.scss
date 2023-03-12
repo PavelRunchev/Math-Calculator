@@ -1,83 +1,91 @@
 @import '../Tools/_tools.mixins';
 
-.nav-logo {
-    width: 30px;
-    margin-right: 10px;
-}
+.navbar-container {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 
-.icon-bars {
-    color: $third-color-blue !important;
-}
+    .nav-logo {
+        width: 30px;
+        margin-right: 10px;
+    }
 
-
-.navbar-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px;
-    font-weight: 300;
-    transition: all 0.3s ease-out;
-}
-
-.navbar-item:hover {
-    background-color: $secondary-color-blue;
-}
-
-.navlink {
-    font-size: 16px;
-    margin: 0;
-    padding: 3px 5px;
-    color: $third-color-blue !important;
-}
-
-//
-// Dropdown Menu
-//
-.dropdown-container {
-    overflow: hidden;
-    border-radius: 8px !important;
-    @include primary-box-shadow-black;
-
-    .dropdown-navlink {
-        font-size: 16px !important;
-        margin: 0;
-        padding: 3px 5px;
+    .icon-bars {
         color: $third-color-blue !important;
+    }
+
+
+    .navbar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        font-weight: 300;
         transition: all 0.3s ease-out;
     }
 
-    .dropdown-navlink:hover {
+    .navbar-item:hover {
         background-color: $secondary-color-blue;
     }
-}
 
-.nav-title {
-    color: $third-color-blue !important;
-    font-weight: 600;
-}
+    .navlink {
+        font-size: 16px;
+        margin: 0;
+        padding: 3px 5px;
+        color: $third-color-blue !important;
+    }
 
-//
-// Search Form
-//
-.btn-search {
-    margin: 0;
-    background-color: $third-color-blue !important;
-    transition: all 0.3s ease-out;
+    //
+    // Dropdown Menu
+    //
+    .dropdown-container {
+        overflow: hidden;
+        border-radius: 8px !important;
+        @include primary-box-shadow-black;
 
-    &:hover {
-        background-color: $fourth-color-blue !important;
+        .dropdown-navlink {
+            font-size: 16px !important;
+            margin: 0;
+            padding: 3px 5px;
+            color: $third-color-blue !important;
+            transition: all 0.3s ease-out;
+        }
+
+        .dropdown-navlink:hover {
+            background-color: $secondary-color-blue;
+        }
+    }
+
+    .nav-title {
+        color: $third-color-blue !important;
+        font-weight: 600;
+    }
+
+    //
+    // Search Form
+    //
+    .btn-search {
+        margin: 0;
+        background-color: $third-color-blue !important;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            background-color: $fourth-color-blue !important;
+        }
+    }
+
+    .search-input {
+        color: $fourth-color-blue !important;
+
+        &:focus {
+            @include input-select-focus;
+        }
+        
+        &::placeholder {
+            color: $third-color-blue;
+        }
     }
 }
 
-.search-input {
-    color: $fourth-color-blue !important;
-
-    &:focus {
-        @include input-select-focus;
-    }
-    
-    &::placeholder {
-        color: $third-color-blue;
-    }
-}
 

@@ -13,8 +13,12 @@
 @import './public/sass/Settings/_settings.colors';
 @import './public/sass/Settings/_settings.breakpoints';
 
+@import './public/sass/Elements/_element.h5';
+@import './public/sass/Elements/_element.hr';
+
 
 @import './public/sass/Components/_component.navigation';
+@import './public/sass/Components/_component.footer';
 
 body {
   width: 100%;
