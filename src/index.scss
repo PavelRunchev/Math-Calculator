@@ -1,0 +1,37 @@
+
+//loading fontawesome icons that sass!
+@import url("./public/fontawesome/css/all.css");
+@import url("./public/fontawesome/css/brands.css");
+@import url("./public/fontawesome/css/fontawesome.css");
+@import url("./public/fontawesome/css/solid.css");
+@import url("./public/fontawesome/css/regular.css");
+
+
+@import './public/sass/Generic/_generic.reset';
+
+@import './public/sass/Settings/_settings.fonts';
+@import './public/sass/Settings/_settings.colors';
+@import './public/sass/Settings/_settings.breakpoints';
+
+
+@import './public/sass/Components/_component.navigation';
+
+body {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-display: column;
+  background-color: rgba(192, 225, 240, 0.35) !important;
+  padding: 0 !important;
+}
+
+
+body hr {
+  min-width: 500px;
+  height: 1px !important;
+  margin-right: auto !important;
+  background: linear-gradient(2deg, rgb(91, 98, 104) 65%, rgb(213, 248, 255) 100%);
+}
+
