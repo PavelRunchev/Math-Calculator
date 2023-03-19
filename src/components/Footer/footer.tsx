@@ -36,8 +36,8 @@ class Footer extends React.Component {
                         <h5><MDBIcon fas icon="cog" className="global-icon"/> Support</h5>
                         <div className="pl-4 d-flex flex-column">
                             <div className="footer-container-navlink">
-                                <NavLink to="#" className="footer-link footer-link-chart-area"> About</NavLink>
-                                <MDBIcon fas icon="chart-area" className="icon-footer-link chart-area"/>
+                                <NavLink to="#" className="footer-link footer-link-address-book"> About us</NavLink>
+                                <MDBIcon far icon="address-book" className="icon-footer-link address-book"/>
                             </div>
                             <div className="footer-container-navlink">
                                 <NavLink to="#" className="footer-link footer-link-shield-alt"> Privacy</NavLink>

@@ -15,10 +15,15 @@
 
 @import './public/sass/Elements/_element.h5';
 @import './public/sass/Elements/_element.hr';
+@import './public/sass/Elements/_element.under-line';
 
 
 @import './public/sass/Components/_component.navigation';
+@import './public/sass/Components/_component.leftMenu';
 @import './public/sass/Components/_component.footer';
+@import './public/sass/Components/_component.accordion';
+@import './public/sass/Components/_component.othersMenu';
+
 
 body {
   width: 100%;
