@@ -1,0 +1,62 @@
+@import '../Settings/_settings.colors';
+
+.left-side-menu-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 270px;
+    height: calc(100vh - 70px);
+    z-index: 1000;
+    background-color: $third-color-blue;
+    padding: 20px 15px;
+    transform: translateX(-600px);
+
+    @include for-tablet-down {
+        height: 100vh;
+    }
+
+    @include for-phone-only {
+        width: 100%;
+    }
+
+    
+
+    .left-side-menu-logo {
+        display: inline;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+
+    .left-side-menu-title {
+        display: inline-block;
+        font-size: 24px;
+    }
+
+    .hide-side-menu-icon-container {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .chevron-circle-left {
+        cursor: pointer;
+        font-size: 30px;
+        color: $five-color-white;
+        transition: color 0.3s ease-out;
+
+        &:hover {
+            color: $six-color-white;
+        }
+    }
+
+
+    .acordion-container {
+        background-color: transparent !important;
+    }
+}
+

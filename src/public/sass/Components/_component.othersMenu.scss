@@ -1,0 +1,79 @@
+@import '../Settings/_settings.colors';
+@import '../Settings/_settings.breakpoints';
+
+.container-others-menu {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $third-color-blue;
+    color: $five-color-white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transform: translateY(-300px);
+    margin: 0px auto;
+    padding: 20px 10px;
+    z-index: 10;
+    transition: all 0.3s ease-out;
+
+    @include for-tablet-down {
+        width: 550px;
+        position: relative;
+        top: 0px;
+        left: 0;
+        margin: 0px auto;
+    }
+
+    @include for-phone-only {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+   
+
+    .container-inner-others-menu {
+        width: 30%;
+        height: 100%;
+
+        .others-menu-item {
+            position: relative;
+
+
+            .icon-caret-right {
+                opacity: 0;
+                position: absolute;
+                top: 8px;
+                left: 0px;
+                color: $five-color-white;
+                transition: all 0.3s ease-out;
+            }
+
+            .others-menu-link {
+                font-size: 14px;
+                font-weight: 200;
+                color: $seventh-color-white;
+                padding-left: 15px;
+                transition: all 0.3s ease-out;
+    
+                &:hover {
+                    color: $five-color-white !important;
+                }
+
+                &:hover ~ .icon-caret-right {
+                    opacity: 1;
+                }
+            }
+
+            
+        }
+    }
+}
