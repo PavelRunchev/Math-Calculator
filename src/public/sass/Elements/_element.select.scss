@@ -1,0 +1,30 @@
+
+@import '../Tools/_tools.mixins';
+@import '../Settings/_settings.breakpoints';
+@import '../Settings/_settings.colors';
+
+select {
+    color: $third-color-blue !important;
+
+    &:focus {
+        @include input-select-focus;
+    }
+    
+    &::placeholder {
+        color: $third-color-blue;
+    }
+}
+
+select option {
+    background-color: $third-color-blue !important;
+    background: $third-color-blue !important;
+    color: $seventh-color-white !important;
+}
+
+select option:checked,
+select option:active,
+select option:target {
+    color: $third-color-blue !important;
+    background-color: $seventh-color-white !important;
+}
+

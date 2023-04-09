@@ -1,0 +1,25 @@
+@import '../Settings/_settings.colors';
+
+
+.container-number-convertor {
+    width: 100%;
+
+    .number-convertor-input-number,
+    .number-convertor-result {
+        width: 100%;
+    }
+
+    .container-textarea {
+        width: 100%;
+        display: flex;
+
+        .number-convertor-text-area-result,
+        .number-convertor-text-area-number-span {
+            height: 100px;
+        }
+    }
+
+    .span-label-result {
+        color: $third-color-blue;
+    }
+}

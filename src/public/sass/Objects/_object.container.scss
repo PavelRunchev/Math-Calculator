@@ -1,0 +1,25 @@
+@import '../Settings/_settings.colors';
+@import '../Settings/_settings.breakpoints';
+@import '../Tools/_tools.mixins';
+
+.container-main {
+    width: 100%;
+    padding: 3% 0%;
+}
+
+.container-form {
+    width: 450px;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    @include primary-box-shadow-black;
+
+
+    @include for-phone-only {
+        width: 98%;
+    }
+}
+
+.container-inner-form {
+    padding: 20px;
+}

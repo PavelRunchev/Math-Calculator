@@ -1,0 +1,14 @@
+@import '../Settings/_settings.colors';
+@import '../Tools/_tools.mixins';
+
+.input-default {
+    color: $third-color-blue !important;
+        
+    &:focus {
+        @include input-select-focus;
+    }
+    
+    &::placeholder {
+        color: $third-color-blue;
+    }
+}

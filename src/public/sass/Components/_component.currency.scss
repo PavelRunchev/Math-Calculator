@@ -1,0 +1,40 @@
+@import '../Tools/_tools.animations';
+@import '../Tools/_tools.mixins';
+@import '../Settings/_settings.breakpoints';
+@import '../Settings/_settings.colors';
+
+.container-currency {
+    width: 100%;
+    padding: 5% 0%;
+
+            .input-amount-currency {
+                color: $third-color-blue !important;
+        
+                &:focus {
+                    @include input-select-focus;
+                }
+                
+                &::placeholder {
+                    color: $third-color-blue;
+                }
+            }
+
+          
+            .extend-result {
+                color: $third-color-blue;
+            }
+
+            .input-result-currency::placeholder {
+                color: $third-color-blue !important;
+            }
+
+        .container-live-currency {
+            background-color: $secondary-color-blue;
+        }
+
+        .img-flag-currency {
+            width: 30px;
+            margin: 5px 5px 5px 10px;
+        }
+
+}

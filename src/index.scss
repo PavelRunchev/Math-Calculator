@@ -7,15 +7,29 @@
 @import url("./public/fontawesome/css/regular.css");
 
 
+@import url("./public/fontawesome/scss/brands.scss");
+@import url("./public/fontawesome/scss/fontawesome.scss");
+@import url("./public/fontawesome/scss/solid.scss");
+@import url("./public/fontawesome/scss/regular.scss");
+
+
 @import './public/sass/Generic/_generic.reset';
 
 @import './public/sass/Settings/_settings.fonts';
 @import './public/sass/Settings/_settings.colors';
 @import './public/sass/Settings/_settings.breakpoints';
 
+@import './public/sass/Objects/_object.container';
+
 @import './public/sass/Elements/_element.h5';
 @import './public/sass/Elements/_element.hr';
 @import './public/sass/Elements/_element.under-line';
+@import './public/sass/Elements/_element.btn';
+@import './public/sass/Elements/_element.span';
+@import './public/sass/Elements/_element.h3';
+@import './public/sass/Elements/_element.select';
+@import './public/sass/Elements/_element.input';
+@import './public/sass/Elements/_element.table';
 
 
 @import './public/sass/Components/_component.navigation';
@@ -23,6 +37,13 @@
 @import './public/sass/Components/_component.footer';
 @import './public/sass/Components/_component.accordion';
 @import './public/sass/Components/_component.othersMenu';
+@import './public/sass/Components/_component.cookie';
+@import './public/sass/Components/_component.pageNotFound';
+@import './public/sass/Components/_component.toastr';
+@import './public/sass/Components/_component.loading';
+
+@import './public/sass/Components/_component.currency';
+@import './public/sass/Components/_component.number-convertor';
 
 
 body {

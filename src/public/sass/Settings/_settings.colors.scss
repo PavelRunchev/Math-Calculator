@@ -1,7 +1,7 @@
 /* colors */
 $primary-color-blue: rgba(110,139,207,1);
 $secondary-color-blue: rgba(149,173,221,0.45);
-$third-color-blue: #3B71CA;
+$third-color-blue: rgb(78, 106, 200);
 $fourth-color-blue: rgb(58,87,150);
 $five-color-white: rgb(251,251,251);
 $six-color-white: rgb(202,202,202);
@@ -9,4 +9,10 @@ $seventh-color-white: rgb(221,221,221);
 
 /* background colors */
 $background-primary-black: rgb(38,38,38);
+$background-secondary-black: rgb(68,68,68);
+
+$toastr-succes: rgb(0, 202, 85);
+$toastr-info: rgba(78, 106, 200, 0.9);
+$toastr-warning: rgb(249, 192, 61);
+$toastr-error: rgb(250, 65, 73);
 

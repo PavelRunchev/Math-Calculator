@@ -1,0 +1,41 @@
+@import '../Settings/_settings.colors';
+@import '../Tools/_tools.animations';
+@import '../Settings/_settings.breakpoints';
+@import '../Tools/_tools.mixins';
+
+.container-cookie {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: $five-color-white;
+    z-index: 999;
+    @include primary-box-shadow-black;
+    animation: cookie-animation 0.8s ease-out;
+
+    .cookie-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .btn-got-it {
+        background-color: $third-color-blue !important;
+        margin-left: 0px;
+        
+        @include for-tablet-up {
+            margin-left: 15px;
+        }
+        
+
+        &:hover {
+            background-color: $fourth-color-blue !important;
+        }
+    }
+}

@@ -8,7 +8,7 @@ export function showOthersMenu(el: HTMLElement, value: string) {
             iterations: 1,
         });
         el.style.transform = "translateY(0px)";
-        el.style.transform = "transform 1s easy-out";
+        el.style.transition = "transform 1s easy-out";
     }
 }
 
@@ -22,6 +22,6 @@ export function hideOthersMenu(el: HTMLElement, value: string) {
             iterations: 1,
         });
         el.style.transform = `translateY(${value})`;
-        el.style.transform = "transform 1s easy-out";
+        el.style.transition = "transform 1s easy-out";
     }
 }

@@ -2,9 +2,9 @@
 @import '../Settings/_settings.breakpoints';
 
 .container-others-menu {
-    position: relative;
-    top: 0px;
-    left: 0px;
+    position: absolute;
+    top: 70px;
+    left: calc(100% / 2 - 265px);
     width: 550px;
     height: auto;
     display: flex;
@@ -15,23 +15,24 @@
     color: $five-color-white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    transform: translateY(-300px);
+    transform: translateY(-500px);
     margin: 0px auto;
     padding: 20px 10px;
     z-index: 10;
+    @include primary-box-shadow-black;
     transition: all 0.3s ease-out;
+    
 
     @include for-tablet-down {
         width: 550px;
-        position: relative;
-        top: 0px;
-        left: 0;
+        position: absolute;
+        top: 70px;
         margin: 0px auto;
     }
 
     @include for-phone-only {
         width: 100%;
-        position: relative;
+        position: absolute;
         top: 0px;
         left: 0px;
         flex-direction: column;
@@ -72,8 +73,6 @@
                     opacity: 1;
                 }
             }
-
-            
         }
     }
 }

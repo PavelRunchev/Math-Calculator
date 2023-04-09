@@ -1,0 +1,11 @@
+@import '../Settings/_settings.colors';
+
+.chevron-circle-left {
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $third-color-blue;
+    }
+}

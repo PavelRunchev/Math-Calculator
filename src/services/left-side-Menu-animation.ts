@@ -10,7 +10,7 @@ export function showLeftMenu(el: HTMLElement) {
             iterations: 1,
         });
         el.style.transform = "translateX(0px)";
-        el.style.transform = "transform 1s easy-out";
+        el.style.transition = "transform 1s easy-out";
     }
 }
 
@@ -24,7 +24,7 @@ export function hideLeftMenu(el: HTMLElement) {
             iterations: 1,
         });
         el.style.transform = "translateX(-600px)";
-        el.style.transform = "transform 1s easy-out";
+        el.style.transition = "transform 1s easy-out";
     }
 }
 

@@ -1,0 +1,11 @@
+@import '../Tools/_tools.mixins';
+@import '../Settings/_settings.colors';
+
+.table {
+    @include primary-box-shadow-black;
+
+    thead {
+        background-color: $background-secondary-black;
+        color: $seventh-color-white;
+    }
+}

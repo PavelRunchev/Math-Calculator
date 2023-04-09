@@ -8,3 +8,13 @@
         transform: rotateZ(360deg);
     }
 }
+
+@keyframes cookie-animation {
+    0% {
+        transform: translateY(400px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
