@@ -1,0 +1,29 @@
+
+@import './settings.mixins';
+@import './settings.colors';
+
+.select {
+    color: $main-color !important;
+
+    &:focus {
+        @include input-select-focus;
+    }
+    
+    &::placeholder {
+        color: $main-color !important;
+    }
+}
+
+select option {
+    cursor: pointer;
+    background-color: $third-color-grey-hover !important;
+
+    color: $main-color  !important;
+}
+
+select > option:checked,
+select > option:active,
+select > option:target {
+    color: $main-color !important;
+    background-color: $third-color-grey-hover !important;
+}

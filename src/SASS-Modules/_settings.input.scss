@@ -1,0 +1,15 @@
+
+
+.inputForm {
+    &:hover {
+        color: hsl(217,53%,48%) !important;
+    }
+
+    &::placeholder {
+        color: hsl(217,53%,48%) !important;
+    }
+
+    &::-ms-input-placeholder {
+        color: hsl(217,53%,48%) !important;
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../SASS-Modules/settings.colors";
+
+.titleForm {
+    padding: 20px 0px;
+    background-color: $main-color;
+    color: $five-color-white;
+}
+
+.currencyLiveContainer {
+    width: 100%;
+    padding: 5%;
+    background-color: $third-color-grey;
+}
+
+.flagCurrencyImage {
+    width: 30px;
+    margin: 5px 5px 5px 10px;
+}
+
+.inputResult {
+    padding-left: 80px !important;
+}

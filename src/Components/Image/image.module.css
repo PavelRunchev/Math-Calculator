@@ -1,0 +1,9 @@
+.imageModelContainer {
+  width: 100%;
+}
+
+.imageModelContainer > span > img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}

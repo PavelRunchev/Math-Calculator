@@ -1,0 +1,42 @@
+@import '../../SASS-Modules/settings.colors';
+@import '../../SASS-Modules/settings.mixins';
+
+.preTagContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include primary-box-shadow-black;
+    border-radius: 7px;
+    margin: 20px 0px;
+}
+
+.preTagCoppyContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.preTagJSXspan {
+    font-size: 20px;
+    font-weight: bold;
+    color: $icon-color;
+}
+
+.preTagCopyIcon {
+    cursor: pointer;
+    color: $icon-color;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $icon-color-hover;
+    }
+}
+
+pre {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: $code-color-background;
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+}

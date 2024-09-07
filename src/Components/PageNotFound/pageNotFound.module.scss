@@ -1,0 +1,15 @@
+@import '../../SASS-Modules/settings.colors';
+
+.pageNotFoundContainer {
+    padding: 4% 0%;
+}
+
+.chevronCircleLeft {
+    cursor: pointer;
+    font-size: 35px;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $main-color-hover;
+    }
+}

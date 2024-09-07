@@ -1,0 +1,14 @@
+@import './settings.colors';
+
+
+@mixin primary-box-shadow-black {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+    -webkit-box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%) !important;
+}
+  
+@mixin input-select-focus {
+    outline: 0 none !important;
+    border-color: $main-color !important;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.095) inset, 0 0 2px rgba(78, 106, 200, 0.45) !important;
+}
+  

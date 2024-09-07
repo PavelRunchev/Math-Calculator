@@ -1,0 +1,65 @@
+@import '../../SASS-Modules/settings.breakpoints';
+@import '../../SASS-Modules/settings.colors';
+
+.navbar-brand {
+    @include for-tablet-up {
+        margin: 0px;
+    }
+}
+
+.navlist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+//container menu with search form!
+.collapse-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @include for-tablet-down {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+.nav-item {
+    margin: 5px;
+
+    @include for-tablet-down { 
+        width: 100%;
+
+        &:hover {
+            background-color: $main-color-background-hover;
+        }
+
+        &:active{
+            background-color: $main-color-background-hover;
+        }
+    }
+}
+
+.search-form {
+    width: 400px !important;
+    display: flex;
+    margin: 5px 15px 0px 0px;
+
+    @include for-tablet-down {
+        width: 100% !important;
+        margin: 5px 15px 15px px;
+    }
+}
+
+
+
+
+

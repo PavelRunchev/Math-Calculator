@@ -1,0 +1,39 @@
+@import '../../SASS-Modules/_settings.colors';
+@import '../../SASS-Modules/_settings.animations';
+@import '../../SASS-Modules/_settings.breakpoints';
+@import '../../SASS-Modules/_settings.mixins';
+
+
+.containerCookie {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: $background-color-white;
+    z-index: 999;
+    @include primary-box-shadow-black;
+    animation: cookie-animation 0.8s ease-out;
+
+    .cookieInfo {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .btnGotIt {
+        margin-left: 0px;
+        margin-top: 15px;
+        
+        @include for-tablet-up {
+            margin-left: 15px;
+        }
+    }
+}

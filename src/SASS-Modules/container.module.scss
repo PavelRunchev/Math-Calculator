@@ -1,0 +1,215 @@
+@import './settings.colors';
+@import './settings.mixins';
+@import './settings.breakpoints';
+
+.globalContainer {
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    justify-content: center;
+    position: relative;
+
+    @include for-tablet-down {
+        //grid-template-columns: 100%;
+        padding: 50px 0px;
+    }
+
+    @include for-tablet-up {
+        //grid-template-columns: 90%;
+        padding: 200px 0px;
+    }
+
+    // @include for-desktop-up {
+    //     grid-template-columns: 70%;
+    // }
+
+    // @include for-big-desktop-up {
+    //     grid-template-columns: 50%;
+    // }
+}
+
+.globalMainContainer {
+    margin: 3% auto;
+    background-color: $background-color-white;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    @include primary-box-shadow-black;
+
+    @include for-tablet-down {
+        //width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        padding: 5% 0%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 12;
+    }
+
+    @include for-tablet-up {
+        grid-column-start: 3;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 12;
+    }
+
+    @include for-big-desktop-up {
+        grid-column-start: 4;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 12;
+    }
+
+}
+
+.globalFormContainer {
+    width: 500px;
+    margin: 3% auto;
+    background-color: $background-color-white;
+    border-radius: 5px;
+    overflow: hidden;
+    @include primary-box-shadow-black;
+
+    @include for-tablet-portrait-up {
+        width: 500px;
+    }
+
+    @include for-phone-only {
+        width: 99%;
+        margin: 0px auto;
+        padding: 5% 0%;
+    }
+}
+
+.globalInnerContainer {
+    width: 100%;
+    padding: 5%;
+}
+
+.instructionContainer {
+    width: 100%;
+    margin: 20px 0px;
+    padding-left: 2%;
+}
+
+.globalTitleContainer {
+    display: inline-block center;
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+    position: relative;
+}
+
+.globalCard {
+    display: block;
+    margin: 0px auto;
+
+    @include for-tablet-up {
+        width: 200px;
+    }
+
+    @include for-tablet-down {
+        width: 200px;
+    }
+
+    @include for-tablet-portrait-up {
+        width: 75%;
+    }
+
+    @include for-phone-only {
+        width: 100%;
+    }
+}
+
+.containerscroll {
+    @include for-tablet-up {
+        width: 50%;
+    }
+
+    @include for-tablet-down {
+        width: 50%;
+    }
+
+    @include for-tablet-portrait-up {
+        width: 100%;
+    }
+
+    @include for-phone-only {
+        width: 100%;
+    }
+
+    height: 300px;
+    margin: 30px auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: $five-color-white-hover;
+    overflow-y: scroll;
+}
+
+.ScrollSpyContainer {
+    width: 130px;
+    height: auto;
+    position: sticky;
+    top: 0px;
+    right: 0px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    //background-color: $icon-color-hover;
+    z-index: 900;
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    @include for-tablet-down {
+        grid-column-start: 10;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    @include for-tablet-up {
+        grid-column-start: 11;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    @include for-big-desktop-up {
+        grid-column-start: 10;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 0.7rem;
+    }
+
+    & ul li {
+        list-style-type: none;
+        border-left: 2px solid transparent;
+        padding-left: 10px;
+        margin: 5px 0px;
+        transition: all 0.3s ease-out;
+    }
+
+    & ul a {
+        width: 100%;
+        cursor: pointer;
+        margin: 5px 0px;
+        color: hsl(0, 0%, 31%);
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+

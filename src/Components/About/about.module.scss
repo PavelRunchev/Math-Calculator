@@ -1,0 +1,27 @@
+@import '../../SASS-Modules/settings.colors';
+@import '../../SASS-Modules/settings.mixins';
+@import '../../SASS-Modules/settings.breakpoints';
+
+
+.aboutTitleContainer {
+    width: 145px;
+    margin: 20px auto;
+}
+
+.aboutSecondContainer {
+    width: 100%;
+    padding: 3% 0%;
+
+    .aboutImage {
+        width: 100%;
+        height: auto;
+        @include primary-box-shadow-black;
+    }
+}
+
+.aboutDevStudioContainer {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 5% 0%;
+}
+

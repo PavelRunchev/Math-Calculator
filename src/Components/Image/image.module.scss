@@ -1,0 +1,18 @@
+@import "../../SASS-Modules/settings.mixins";
+
+//this is a container
+.imageModelContainer {
+    width: 100%;
+    @include primary-box-shadow-black;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    //this is a lazy load image styles
+    & > span > img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+       
+    }
+}

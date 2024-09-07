@@ -1,0 +1,17 @@
+@import '../../SASS-Modules/settings.breakpoints';
+
+.row {
+    display: flex;
+
+    @include for-tablet-down {
+        flex-direction: row;
+    }
+
+    @include for-tablet-portrait-up {
+        flex-direction: column-reverse;
+    }
+   
+    @include for-tablet-up {
+        flex-direction: row;
+    }
+}
